@@ -11,7 +11,7 @@ public class ExercicioCalculo {
 		float[] valores = new float[4];
 		
 		for (int i = 0; i < valores.length ; i++) {			
-			System.out.println("Digite a nota do aluno " + (i+1) + ": ");
+			System.out.println("Digite o valor n" + (i+1) + ": ");
 			valores[i] = read.nextFloat();
 			if(i == 1 || (i%2 != 0 && i > 1)) {
 				valores[i] *= valores[i-1];

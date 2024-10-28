@@ -16,6 +16,7 @@ public class Menu {
 				+ "3 - Calculo de salario\n"
 				+ "4 - Calculo sem contexto kkkk");
 		
+		System.out.println("\n\nQual atividade você quer realizar: ");
 		menu = read.nextShort();
 		
 		switch(menu) {
