@@ -12,7 +12,7 @@ public class DoarSangue {
 		int idade = 0;
 		char jaDoou = 'o';
 		boolean doou = true;
-
+		
 		System.out.println("Cadastre-se para checar aptidão para doação\n");
 
 		System.out.println("Digite seu nome: ");

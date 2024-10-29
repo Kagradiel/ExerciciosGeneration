@@ -14,7 +14,7 @@ public class Menu {
 							+ "1 - Comparação de numeros\n"
 							+ "2 - Checar positivo ou negativo\n" 
 							+ "3 - Apto a doar sangue? \n" 
-							+ "4 - Comparação de strings");
+							+ "4 - Classificação animal");
 
 		System.out.println("\n\nQual atividade você quer realizar: ");
 		menu = read.nextShort();
@@ -44,7 +44,8 @@ public class Menu {
 			break;
 
 		case 4:
-			
+			ComparadorDeStrings classeAnimal = new ComparadorDeStrings();
+			classeAnimal.comparadorDeStrings();
 			break;
 
 		default:
