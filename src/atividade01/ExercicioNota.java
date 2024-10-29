@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ExercicioNota {
 	
-	public void lerNotas() {
+	public void devolverMedia() {
 		Scanner read = new Scanner(System.in).useLocale(Locale.US);
 		
 		float[] notas = new float[4];

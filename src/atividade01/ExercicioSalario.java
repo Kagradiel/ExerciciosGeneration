@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class ExercicioSalario {
-	public void lerSalario() {
+	public void calcularSalario() {
 		Scanner read = new Scanner(System.in).useLocale(Locale.US);
 		//useLocale usado para fixar o uso do ponto ao invés da virgula
 		

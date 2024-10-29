@@ -11,24 +11,25 @@ public class Menu {
 		short menu = 0;
 		
 		System.out.println("Voce deseja acessar qual atividade: \n"
-				+ "1 - Leitura de notas\n"
+				+ "1 - Calculo de Salario com abono\n"
 				+ "2 - Calculo de media\n"
-				+ "3 - Calculo de salario\n"
+				+ "3 - Calculo de salario liquido\n"
 				+ "4 - Calculo sem contexto kkkk");
 		
 		System.out.println("\n\nQual atividade você quer realizar: ");
 		menu = read.nextShort();
 		
+		
 		switch(menu) {
 		
 		case 1:
 			ExercicioSalario exercicioSalario = new ExercicioSalario();
-            exercicioSalario.lerSalario();           
+            exercicioSalario.calcularSalario();    
 			break;
 			
 		case 2:
 			ExercicioNota exercicioNota = new ExercicioNota();
-            exercicioNota.lerNotas();   
+            exercicioNota.devolverMedia();   
 			break;
 			
 		case 3:
