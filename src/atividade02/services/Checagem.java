@@ -1,6 +1,8 @@
 package atividade02.services;
 
+import java.util.List;
 import java.util.Scanner;
+import atividade02.models.CarrinhoDeCompras.Produto;
 
 public class Checagem {
 
@@ -28,5 +30,18 @@ public class Checagem {
 		return true;
 
 	}
-
+	
+	public int checarIndice(String comparador, List<Produto> produtos) {
+		int index = -1;
+		
+		for (int i = 0; i < produtos.size(); i++) {
+			if (produtos.get(i).getNome().equals(comparador)) {
+				return i;
+			}
+		}
+		
+		return index;
+	}
+	
+	
 }

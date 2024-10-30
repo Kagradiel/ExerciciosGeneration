@@ -14,7 +14,8 @@ public class Menu {
 							+ "1 - Comparação de numeros\n"
 							+ "2 - Checar positivo ou negativo\n" 
 							+ "3 - Apto a doar sangue? \n" 
-							+ "4 - Classificação animal");
+							+ "4 - Classificação animal\n"
+							+ "5 - Menu da lanchonete");
 
 		System.out.println("\n\nQual atividade você quer realizar: ");
 		menu = read.nextShort();
@@ -48,6 +49,11 @@ public class Menu {
 			classeAnimal.comparadorDeStrings();
 			break;
 
+		case 5:
+			Lanchonete comprarLanche = new Lanchonete();
+			comprarLanche.cardapio();
+			break;
+			
 		default:
 			System.out.println("Valor invalido");
 			break;
