@@ -8,17 +8,20 @@ public class Menu {
 
 		Scanner read = new Scanner(System.in);
 
-		short menu = 0;
+		byte menu = 0;
 		
-		System.out.println("Voce deseja acessar qual atividade: \n" 
+		System.out.println("\nVoce deseja acessar qual atividade: \n" 
 							+ "1 - Comparação de numeros\n"
 							+ "2 - Checar positivo ou negativo\n" 
 							+ "3 - Apto a doar sangue? \n" 
 							+ "4 - Classificação animal\n"
-							+ "5 - Menu da lanchonete");
+							+ "5 - Menu da lanchonete\n"
+							+ "6 - Reajuste de Salario\n"
+							+ "7 - Tabuada\n"
+							+ "8 - Conta Bancaria");
 
 		System.out.println("\n\nQual atividade você quer realizar: ");
-		menu = read.nextShort();
+		menu = read.nextByte();
 
 		switch (menu) {
 
@@ -52,6 +55,21 @@ public class Menu {
 		case 5:
 			Lanchonete comprarLanche = new Lanchonete();
 			comprarLanche.cardapio();
+			break;
+			
+		case 6:
+			ReajusteDeSalario reajustar = new ReajusteDeSalario();
+			reajustar.reajuste();
+			break;
+		
+		case 7:
+			Tabuada contar = new Tabuada();
+			contar.calculadoraSwitch();
+			break;
+			
+		case 8:
+			Banco operarConta = new Banco();
+			operarConta.contaBancaria();
 			break;
 			
 		default:
