@@ -1,5 +1,6 @@
 package atividade04Vetores;
 
+import java.util.Arrays;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -15,7 +16,9 @@ public class Menu {
 		
 		System.out.println("\nVoce deseja acessar qual atividade: \n" 
 							+ "1 - Encontrar posição no vetor\n"
-							+ "2 - Separador de vetor\n");
+							+ "2 - Separador de vetor\n" 
+							+ "3 - Separar matriz \n" 
+							+ "4 - Media de notas\n");
 
 		System.out.println("\n\nQual atividade você quer realizar: ");
 		menu = read.nextByte();
@@ -57,6 +60,49 @@ public class Menu {
 			
 			break;
 
+		case 3:
+			
+			SeparadorMatriz matrizes = new SeparadorMatriz();
+			
+			int[][] matriz = {{1,2,3},
+							  {4,5,6},
+							  {7,8,9}};
+			
+			System.out.println("\n\nElementos da Diagonal Principal: ");
+			matrizes.diagonalPrincipal(matriz);
+			
+			System.out.println("\n\nElementos da Diagonal Secundária: ");
+			matrizes.diagonalSecundaria(matriz);
+			
+			System.out.println("\n\nSoma dos Elementos da Diagonal Principal: \n" + matrizes.somaDiagonalPrincipal(matriz));
+			
+			System.out.println("\nSoma dos Elementos da Diagonal Secundária: \n" + matrizes.somaDiagonalSecundaria(matriz));
+			
+			
+			break;
+
+		case 4:
+			
+			MediaPorMatriz notasEmMatriz = new MediaPorMatriz();
+			
+			float[][] notas = {
+		            {4.0f, 5.0f, 7.0f, 3.0f},
+		            {2.5f, 6.5f, 4.7f, 8.0f},
+		            {10.0f, 8.5f, 9.5f, 8.0f},
+		            {9.0f, 6.5f, 7.6f, 8.2f},
+		            {5.0f, 5.0f, 5.0f, 6.3f},
+		            {7.0f, 8.0f, 9.0f, 8.5f},
+		            {5.5f, 3.5f, 2.5f, 1.0f},
+		            {8.0f, 9.0f, 10.0f, 9.5f},
+		            {5.6f, 5.8f, 6.5f, 7.0f},
+		            {7.5f, 8.5f, 9.5f, 10.0f}
+		        };
+			
+			float[] medias = notasEmMatriz.notasParaVetor(notas);
+			
+			System.out.println(Arrays.toString(medias));
+			
+			break;
 		
 		default:
 			System.out.println("Valor invalido");
