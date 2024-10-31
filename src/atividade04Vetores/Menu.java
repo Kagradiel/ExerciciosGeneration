@@ -27,65 +27,65 @@ public class Menu {
 
 		case 1:
 			
-			int[] vetor = {5, 10, 50, 68, 680, 80, 60, 7, 3, 22};
-			int numero = 0;
+			int[] array1 = {5, 10, 50, 68, 680, 80, 60, 7, 3, 22};
+			int number = 0;
 			
 			System.out.println("\nDigite o numero que deseja a posição: ");
-			numero = read.nextInt();
+			number = read.nextInt();
 			
-			Identificar valor = new Identificar();
-			valor.PosicaoVetor(vetor, numero);
+			IdentifyArray value = new IdentifyArray();
+			value.arrayPosition(array1, number);
 			
 			break;
 
 		case 2:
 			
-			SeparadorVetorial separar = new SeparadorVetorial();
+			ArraySeparator part = new ArraySeparator();
 			
-			int[] vetor2 = new int[10];
+			int[] array2 = new int[10];
 			
 			System.out.println("\nCrie um vetor");
 			
-			for(int i = 0; i < vetor2.length; i++) {
+			for(int i = 0; i < array2.length; i++) {
 				
 				System.out.println("\nDigite o numero " + (i+1) + " do vetor: ");
-				vetor2[i] = read.nextInt();
+				array2[i] = read.nextInt();
 				
 			}
 			
-			separar.indicesImpares(vetor2);
-			separar.elementosPares(vetor2);
-			System.out.println("Soma: " + separar.somaVetor(vetor2));
-			System.out.println("\nMédia: " + String.format("%.2f",separar.mediaDeVetor(vetor2)));
+			part.oddIndex(array2);
+			part.pairElements(array2);
+			System.out.println("Soma: " + part.arraySum(array2));
+			System.out.println("\nMédia: " + String.format("%.2f",part.arrayAverage(array2)));
 			
 			break;
 
 		case 3:
 			
-			SeparadorMatriz matrizes = new SeparadorMatriz();
+			MatrixSeparator matrices = new MatrixSeparator();
 			
-			int[][] matriz = {{1,2,3},
+			int[][] matrix = {{1,2,3},
 							  {4,5,6},
 							  {7,8,9}};
 			
 			System.out.println("\n\nElementos da Diagonal Principal: ");
-			matrizes.diagonalPrincipal(matriz);
+			matrices.mainDiagonal(matrix);
 			
 			System.out.println("\n\nElementos da Diagonal Secundária: ");
-			matrizes.diagonalSecundaria(matriz);
+			matrices.secondaryDiagonal(matrix);
 			
-			System.out.println("\n\nSoma dos Elementos da Diagonal Principal: \n" + matrizes.somaDiagonalPrincipal(matriz));
+			System.out.println("\n\nSoma dos Elementos da Diagonal Principal: \n" + matrices.mainDiagonalSum(matrix));
 			
-			System.out.println("\nSoma dos Elementos da Diagonal Secundária: \n" + matrizes.somaDiagonalSecundaria(matriz));
+			System.out.println("\nSoma dos Elementos da Diagonal Secundária: \n" + matrices.secondaryDiagonalSum(matrix));
 			
 			
 			break;
 
 		case 4:
 			
-			MediaPorMatriz notasEmMatriz = new MediaPorMatriz();
+			AverageByMatrix matrixGrids = new AverageByMatrix();
 			
-			float[][] notas = {
+			float[][] grades = {
 		            {4.0f, 5.0f, 7.0f, 3.0f},
 		            {2.5f, 6.5f, 4.7f, 8.0f},
 		            {10.0f, 8.5f, 9.5f, 8.0f},
@@ -98,9 +98,9 @@ public class Menu {
 		            {7.5f, 8.5f, 9.5f, 10.0f}
 		        };
 			
-			float[] medias = notasEmMatriz.notasParaVetor(notas);
+			float[] averages = matrixGrids.averageToArray(grades);
 			
-			System.out.println(Arrays.toString(medias));
+			System.out.println(Arrays.toString(averages));
 			
 			break;
 		
