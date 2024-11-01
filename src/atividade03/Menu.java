@@ -8,7 +8,7 @@ public class Menu {
 		
 		Scanner read = new Scanner(System.in);
 	
-		ContagemDeInteiros contador = new ContagemDeInteiros();	
+		ContagemDeInteiros countInt = new ContagemDeInteiros();	
 		byte menu = 0;
 		
 		System.out.println("\nVoce deseja acessar qual atividade: \n" 
@@ -45,11 +45,11 @@ public class Menu {
 			break;
 
 		case 5:	
-			contador.contarPositivos();
+			countInt.contarPositivos();
 			break;
 			
 		case 6:
-			contador.mediaMultiplosDe3();
+			countInt.mediaMultiplosDe3();
 			break;
 		
 		default:
