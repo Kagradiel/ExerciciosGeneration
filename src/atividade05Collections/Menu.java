@@ -27,7 +27,7 @@ public class Menu {
 			case 2:
 
 				HandleArrayListNumberSearch.handle(read);
-				;
+				
 
 				break;
 
