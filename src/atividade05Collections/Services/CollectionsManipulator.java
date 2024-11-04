@@ -1,12 +1,13 @@
 package atividade05Collections.Services;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 import java.util.Set;
 
 public class CollectionsManipulator {
 
-	public void getArrayList(ArrayList<String> text, int size, String title, Scanner read) {
+	public static void getArrayList(ArrayList<String> text, int size, String title, Scanner read) {
 
 		for (int i = 0; i < size; i++) {
 			System.out.println("\n" + title + " " + (i + 1) + ": ");
@@ -15,7 +16,7 @@ public class CollectionsManipulator {
 
 	}
 
-	public void stackedListSysout(ArrayList<String> texts) {
+	public static void stackedListSysout(Collection<String> texts) {
 
 		for (String text : texts) {
 			System.out.println(text);
@@ -23,7 +24,7 @@ public class CollectionsManipulator {
 
 	}
 
-	public void getSet(Set<Integer> list, int size, String title, Scanner read) {
+	public static void getSet(Set<Integer> list, int size, String title, Scanner read) {
 
 		for (int i = 0; i < size; i++) {
 			System.out.println("\n" + title + " " + (i + 1) + ": ");

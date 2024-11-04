@@ -13,34 +13,23 @@ public class Menu {
 		do {
 			
 			menu = DisplayMenu.display(read);
-
-			System.out.println(menu);
 			
 			switch (menu) {
 
 			case 1:
-
 				HandleColorList.handle(read);
-
 				break;
 
 			case 2:
-
 				HandleArrayListNumberSearch.handle(read);
-				
-
 				break;
 
 			case 3:
-
 				HandleHashSetIteration.handle(read);
-
 				break;
 
 			case 4:
-
 				HandleNumberInSet.handle(read);
-
 				break;
 				
 			case 0:

@@ -8,14 +8,12 @@ import java.util.Set;
 import atividade05Collections.Services.CollectionsManipulator;
 
 public class HandleHashSetIteration {
-	
-	private static CollectionsManipulator listManipulator = new CollectionsManipulator();
 
     public static void handle(Scanner read) {
         Set<Integer> setNumbers = new HashSet<>();
         
         System.out.println("\nDigite 10 valores não repetidos");
-        listManipulator.getSet(setNumbers, 10, "Digite o número", read);
+        CollectionsManipulator.getSet(setNumbers, 10, "Digite o número", read);
         
         System.out.println("\nListar dados do Set: ");
         Iterator<Integer> iSetNumbers = setNumbers.iterator();
